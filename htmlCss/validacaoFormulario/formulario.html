@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Clique no botão para abrir a página de login</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="AAA-17.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Nome de usuário</b></label>
+      <input type="text" placeholder="Seu usuário" name="nome" id="nome">
+
+      <label for="psw"><b>Senha</b></label>
+      <input type="password" placeholder="Seu senha" name="senha" id="senha">
+        
+      <button type="submit" id="botao">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Lembrar identificação de usuário
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+      <span class="psw">Esqueceu a <a href="#">senha?</a></span>
+    </div>
+  </form>
+</div>
+<script src="validacao.js"></script>
+</body>
+</html>
