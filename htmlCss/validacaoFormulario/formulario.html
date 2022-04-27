@@ -20,13 +20,48 @@
       <img src="AAA-17.jpg" alt="Avatar" class="avatar">
     </div>
 
+    <h3 id="cabecalho1">Dados pessoais</h3>
     <div class="container">
-      <label for="uname"><b>Nome de usuário</b></label>
+      <label for="uname"><b>Nome de usuário:</b></label>
       <input type="text" placeholder="Seu usuário" name="nome" id="nome">
 
-      <label for="psw"><b>Senha</b></label>
+      <label for="psw"><b>Senha:</b></label>
       <input type="password" placeholder="Seu senha" name="senha" id="senha">
         
+      <label for="sex"><b>Sexo:</b></label>
+      <input type="radio" name="gender" value="male"> Masculino
+      <input type="radio" name="gender" value="female"> Feminino
+
+      <br>
+      <label for="idade"><b>Idade:</b></label>
+      <input type="number" placeholder="Sua idade" name="idade" id="idade">
+
+      <hr>
+    <h3 id="cabecalho2">Dados profissionais</h3>
+    <div class="container">
+      
+      <label for="sex"><b>Forma de contratação:</b></label>  
+      <input type="radio" name="gender" value="male"> Registrado
+      <input type="radio" name="gender" value="female"> Contratado
+
+      <br>
+      <label for="cargo"><b>Cargo:</b></label>
+          <select id="cargo" name="cargo">
+            <option value="estagiario">Estagiário</option>
+            <option value="analistajunior">Analista Junior</option>
+            <option value="analistapleno">Analista Pleno</option>
+            <option value="analistasenior">Analista Senior</option>
+          </select>
+
+      <br>    
+      <label for="setor"><b>Setor:</b></label>
+      <input type="text" placeholder="Seu setor" name="setor" id="setor">    
+  
+      <br>
+      <label for="data"><b>Data Registro:</b></label>
+      <input type="date" name="idade" id="data">    
+
+      <hr>
       <button type="submit" id="botao">Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Lembrar identificação de usuário

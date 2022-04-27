@@ -51,6 +51,18 @@ span.psw {
   padding-top: 16px;
 }
 
+#idade {
+  margin: 16px;
+}
+
+#cargo {
+  margin: 16px;
+}
+
+h3 {
+  padding-left: 10px;
+}
+
 .modal {
   display: none; 
   position: fixed; 
