@@ -40,9 +40,9 @@
     <h3 id="cabecalho2">Dados profissionais</h3>
     <div class="container">
       
-      <label for="sex"><b>Forma de contratação:</b></label>  
-      <input type="radio" name="gender" value="male"> Registrado
-      <input type="radio" name="gender" value="female"> Contratado
+      <label for="contrct"><b>Forma de contratação:</b></label>  
+      <input type="radio" name="registrado"> Registrado
+      <input type="radio" name="contratado"> Contratado
 
       <br>
       <label for="cargo"><b>Cargo:</b></label>
@@ -59,7 +59,7 @@
   
       <br>
       <label for="data"><b>Data Registro:</b></label>
-      <input type="date" name="idade" id="data">    
+      <input type="date" name="idade" id="data" min="2021-12-31" max="2022-05-06" >    
 
       <hr>
       <button type="submit" id="botao">Login</button>

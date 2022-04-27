@@ -4,7 +4,6 @@ var senha = document.getElementById('senha')
 var botao = document.getElementById('botao')
 var idade = document.getElementById('idade')
 var setor = document.getElementById('setor')
-var data = document.getElementById('data')
 
 // Quando o usuário clicar em qualquer lugar fora do modal, ele fecha!
 window.onclick = function(event) {
@@ -19,8 +18,6 @@ botao.addEventListener("click", function(e) {
     const valorSenha = senha.value
     const valorIdade = idade.value
     const valorSetor = setor.value
-    const valorData = data.value
-    const dataAtual = new Date()
 
     if (valorNome === "" || valorSenha === "" || valorIdade === "" || valorSetor === "") {
         alert(`Preencher todos os campos!`)
@@ -28,7 +25,5 @@ botao.addEventListener("click", function(e) {
         alert(`Você é menor de 18 anos!`)
     } else if (valorNome.length < 5) {
         alert(`O nome tem que ter pelo menos 5 cararacteres`)
-    } else if (valorData ) {
-
     }
 })
